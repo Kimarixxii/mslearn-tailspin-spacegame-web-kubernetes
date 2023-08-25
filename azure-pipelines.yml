@@ -38,8 +38,7 @@ jobs:
       containerRegistry: 'Container Registry Connection'
       tags: |
           $(tag)
-          
-          - publish: '$(Build.SourcesDirectory)/manifests'
+            - publish: '$(Build.SourcesDirectory)/manifests'
           artifact: manifests
 
 - stage: 'Deploy'
